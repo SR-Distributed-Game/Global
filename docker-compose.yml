@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  backend:
+    image: ghcr.io/sr-distributed-game/backend:main
+    ports:
+      - "8080:8080"
+
+  frontend:
+    image: ghcr.io/sr-distributed-game/frontend:main
+    ports:
+      - "4173:4173"
